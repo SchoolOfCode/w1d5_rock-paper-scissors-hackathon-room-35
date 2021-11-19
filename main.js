@@ -1,6 +1,6 @@
 
-let playerMove = "rock";
-let computerMove = "paper";
+let playerMove = prompt('What is your move?');
+let computerMove = Math.random();
 
 
 function getWinner(playerMove,computerMove){
@@ -13,4 +13,14 @@ if(playerMove === "rock" && computerMove === "paper" || playerMove === "scissors
   };
   
   let result = getWinner(playerMove,computerMove);
-  
+
+  alert(result)
+
+ /function computerchoice (computerMove){
+
+      if (Math.random() < 0.34){ return 'rock'} 
+     else if (Math.random () <=0.64){return 'paper'}
+     else {return 'sissors'}
+  };
+  let computer = computerchoice(computerMove);
+console.log ( computer);
