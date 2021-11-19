@@ -1,12 +1,13 @@
 
 let playerMove = prompt('What is your move?');
-let computerMove = Math.random();
+let computerChoice =['rock', 'paper', 'sissors'];
+let computerMove = computerMove1();
 
 
 function getWinner(playerMove,computerMove){
- console.log( playerMove)   
+console.log( playerMove)
 if(playerMove === "rock" && computerMove === "paper" || playerMove === "scissors" && computerMove === "rock" || playerMove === "paper" && computerMove === "scissors")
-      {return -1}
+     {return -1}
    else if (playerMove === "paper" && computerMove === "rock" || playerMove === "rock" && computerMove === "scissors" || playerMove === "scissors" && computerMove === "paper")
     {return 1}
     else {return 0}
@@ -16,11 +17,14 @@ if(playerMove === "rock" && computerMove === "paper" || playerMove === "scissors
 
   alert(result)
 
- /function computerchoice (computerMove){
+ 
 
-      if (Math.random() < 0.34){ return 'rock'} 
-     else if (Math.random () <=0.64){return 'paper'}
-     else {return 'sissors'}
-  };
-  let computer = computerchoice(computerMove);
-console.log ( computer);
+function computerMove1 ( computerChoice){
+
+  let move = Math.floor(Math.random()*3)
+  if (move === 0) {return 'rock'}
+  else if (move === 1) {return 'paper'}
+  else  {return 'siccors'};}
+
+
+console.log (computerMove);
