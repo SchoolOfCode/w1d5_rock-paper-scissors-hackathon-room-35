@@ -1,0 +1,44 @@
+let playerMove1 = "rock";
+let computerMove1 = "scissors";
+
+let playerMove2 = "rock";
+let computerMove2 = "rock";
+
+let playerMove3 = "paper";
+let computerMove3 = "scissors";
+
+let playerMove4 = "paper";
+let computerMove4 = "paper";
+
+let playerMove5 = "scissors";
+let computerMove5 = "scissors";
+
+
+prompt("What's your move");
+if(playerMove === "rock"){
+    if(computerMove === "paper"){
+        alert("Paper Wins")
+    } else{
+        alert("Scissors Wins")
+    }
+}
+
+if(playerMove === "rock"){
+    if(computerMove1 === "scissors"){
+        alert("rock Wins")
+    } else{
+        if(playerMove === "paper") {
+            alert("scissors wins");
+    }
+ }
+}
+
+if(playerMove === "paper"){
+    if(computerMove1 === "scissors"){
+        alert("rock Wins")
+    } else{
+        if(playerMove === "rock") {
+            alert("rock wins");
+    }
+ }
+}
